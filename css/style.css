@@ -59,7 +59,7 @@ html, body {
     .top-menu > .container {
         height: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
         align-items: center;
     }
 
@@ -132,10 +132,13 @@ html, body {
             .top-menu .menu-links {
                 display:block;
             }
+        top-menu > .container {
+            justify-content: space-between; 
         }
+    }
+
 @media (min-width: 992px) {
     .top-menu > .container {
-        justify-content: space-between; 
         }   
   
     .top-menu .menu-links .links {
