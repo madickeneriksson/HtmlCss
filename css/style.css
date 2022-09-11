@@ -335,9 +335,7 @@ html, body {
               
             }
 /* Shop by category */
-.shop-by-category {
-    
-}
+
     .shop-by-category .grid {
         display: grid;
         gap: 0.8rem;
