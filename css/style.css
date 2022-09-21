@@ -126,7 +126,7 @@ html, body {
     .top-menu > .container {
         height: 100%;
         display: flex;
-        justify-content: end;
+        justify-content: space-between;
         align-items: center;
         
     }
@@ -384,53 +384,6 @@ html, body {
         font-size: var(--font-size-14);
     }
 
-/* Showcase end */
-.showcase-end {
-    background-color: var(--color-theme-dark);
-    height: 430px;
-    margin-top: 6rem;
-    border: var(--color-theme-dark);
-    }
-.showcase-end .container {
-     display: flex;
-    justify-content: space-between;
-     }
-     .showcase-end .showcase-end-left {
-    background-color: var(--color-theme);
-    height: 265px;
-    width: 255px;
-    text-align: center;
-}
-    .showcase-end .showcase-end-left h1 {
-        margin: 1rem;
-        color: var(--color-white);
-        font-family: var(--font-play);
-        font-weight: var(--font-weight-bold);
-        font-size: var(--font-size-36);
-        
-    }
-    .showcase-end .showcase-end-left p {
-        color: var(--color-white);
-        font-family: var(--font-roboto);
-        font-weight: var(--font-weight-medium);
-        font-size: var(--font-size-24);
-    }
-    .showcase-end .showcase-end-right {
-   display: flex;
-   justify-content: space-evenly;  
-    }
-   .showcase .showcase-end-right .showcase-circle {
-        background-color: var(--color-white);
-        border-radius: 10rem;
-    }
-.showcase-end-right .showcase-circle h1 {
-    color: var(--color-theme);
-}
-    .showcase-end .showcase-end-right .showcase-circle p {
-        color: var(--color-white);
-        
-        
-    }
 
 
 /* Webshop-info */
@@ -647,8 +600,70 @@ html, body {
                 .new-arrivals .card .card-menu li a:hover {
                     color: var(--color-theme);
                 }
+                
+/* Flash sale */
+.flash-sale {
+    background-color: var(--color-theme-dark);
+    height: 430px;
+    margin-top: 6rem;
+    border: var(--color-theme-dark);
+    }
+    .flash-sale .container {
+     display: flex;
+    justify-content: space-between;
+}
 
-/* card featured products */
+    .flash-sale .left {
+    background-color: var(--color-theme);
+    height: 265px;
+    width: 255px;
+    text-align: center;
+}
+    .flash-sale .left h1 {
+        margin: 1rem;
+        color: var(--color-white);
+        font-family: var(--font-play);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-36);
+        
+    }
+    .flash-sale .left p {
+        color: var(--color-white);
+        font-family: var(--font-roboto);
+        font-weight: var(--font-weight-medium);
+        font-size: var(--font-size-24);
+    }
+
+    .flash-sale .right {
+        display: flex;
+        justify-content: space-evenly;  
+    }
+    .flash-sale .right .right-circle{    
+        background-color: var(--color-white);
+        padding:1rem;
+        display: block;
+        align-items: center;
+        flex:1; 
+        margin:auto;
+        
+    }
+        .right  .right-circle h1 { 
+            color: var(--color-theme);
+            font-size: var(--font-size-24);
+            font-family: var(--font-play);
+            font-weight: var(--font-weight-bold);
+            text-align: center;     
+    }
+          .right .right-circle p { 
+            color: var(--color-theme-dark);
+            text-align: center;
+            font-family: var(--font-roboto);    
+        }
+         .right .btn-end-right {
+            display: block;
+        }
+
+/* featured products */
 
     .featured-products  {
     padding-top: 6rem;
@@ -748,10 +763,113 @@ html, body {
                     color: var(--color-theme);
                 }
 
+/* Top sellers */
+.top-sellers .grid {
+   
+        display: grid;
+        gap: 0.8rem;
+        grid-template-columns: repeat(3, minmax(550px, 550px));
+        grid-template-rows: repeat(3, minmax(650px, 300px));
+    }
+    .top-sellers .top-box {
+        position: relative;
+        background-color: var(--color-gray-1);
+        border-radius: var(--border-radius-small);
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        }
+       
+        .top-sellers .top-box .top-box-title {
+            position: absolute;
+            left: 0;
+            bottom:0;
+            width: 50%;
+            border-radius: 0 var(--border-radius-small) 0 0;
+            background-color: var(--color-theme-dark);
+            color:var(--color-theme);
+            padding: 0.5rem 1rem;
+            font-weight: var(--font-weight-medium);
+            height: 38px;
+            transition: 0.2s ease-in-out;
+            }
+            .top-sellers .top-box:hover .top-box-title {
+                height: 75px;
+            }
+             .top-sellers .top-box .top-box-title span {
+                display: block;
+                color: var(--color-white);
+                font-size: 0.8rem;
+                margin-top: 0.5rem;
+             }
+
+ #top-box-1 {
+grid-column: 1 / 3;
+
+}
+#top-box-2 {
+grid-column: 3 / -1;
+
+}
+#top-box-3 {
+grid-column: 3 / -1;
+
+}
 
 
+/* Subscribe */
+.subscribe {
+    background-color: var(--color-gray-3);
+    height: 310px;
+    margin-top: 6rem;
+    }
+    .subscribe .container {
+        display: flex;
+    }
+    .subscribe .left {
+        flex: 1;
+    }
+    .subscribe .right {
+        flex 1;
+        background-color: var(--color-gray-1);
+        height: 310px;
+        width: 400px;
+    }
+    
+.subscribe .left h1 {
+        margin-top: 2rem;
+        color: var(--color-dark);
+        font-family: var(--font-play);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-36);
+    }
+    .subscribe .left h1 span {
+        color: var(--color-theme);
+        
+    }
+    .subscribe .left p {
+        color: var(--color-dark);
+        padding-right: 17rem;
+        font-family: var(--font-roboto);
+        font-weight: var(--font-weight-regular);
+        font-size: var(--font-size-16);
+    }
 
-
+/* Footer */
+.footer .wrapper {
+    background-color: var(--color-dark);
+    height: 80px;
+}
+.wrapper h1 {
+    color: var(--color-white);
+    font-family: var(--font-roboto);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+    text-align: center;
+    padding: 1rem;
+}
+ 
+    
 
 
 
@@ -768,7 +886,7 @@ html, body {
         display:block;
             }
         top-menu > .container {
-            justify-content: space-between; 
+            justify-content: end;
         }
     }
 
@@ -814,7 +932,7 @@ html, body {
         flex:1;
         width:100%;
     }
-}
+} 
 
 
         
