@@ -13,92 +13,99 @@
 <body>
   <header>
 
-    <!-- Top menu -->
-    <div class="top-menu">
-        <div class="container">
-            <div class="site-settings">
-                <div class="dropdown dropdown-theme me-3">
-                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
-                        </button>
-                        <ul id="languages"class="dropdown-menu dropdown-theme">
-                            <li><a class="dropdown-item" href="#">ENG</a></li>
-                            <li><a class="dropdown-item" href="#">SWE</a></li>
-                        </ul>
-                  </div>
-                  <div class="dropdown dropdown-theme me-3">
+<!-- Top menu -->
+<div class="top-menu">
+    <div class="container">
+        <div class="site-settings">
+            <!-- Dropdown selected language -->
+            <div class="dropdown dropdown-theme me-3">
                     <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span id="selected-currency">EUR</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                        <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
                     </button>
-                    <ul id="currencies"class="dropdown-menu dropdown-theme">
-                        <li><a class="dropdown-item" href="#">EUR</a></li>
-                        <li><a class="dropdown-item" href="#">USD</a></li>
-                        <li><a class="dropdown-item" href="#">SEK</a></li>
+                    <ul id="languages"class="dropdown-menu dropdown-theme">
+                        <li><a class="dropdown-item" href="#">ENG</a></li>
+                        <li><a class="dropdown-item" href="#">SWE</a></li>
+                    </ul>
+              </div>
+              <!-- Dropdown selected currency -->
+              <div class="dropdown dropdown-theme me-3">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span id="selected-currency">EUR</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                </button>
+                <ul id="currencies"class="dropdown-menu dropdown-theme">
+                    <li><a class="dropdown-item" href="#">EUR</a></li>
+                    <li><a class="dropdown-item" href="#">USD</a></li>
+                    <li><a class="dropdown-item" href="#">SEK</a></li>
+                </ul>
+           </div>
+        </div>
+        <div class="menu-links">
+            <span class="site-links">
+                <a href="#">Newsletter</a>
+                <a href="#">Contact us</a>
+                <a href="#">FAQs</a>
+            </span>
+            <!-- Social media links -->
+            <span class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </span>   
+        </div>
+    </div>
+</div>
+
+<!-- Main menu -->
+<div class="main-menu">
+    <div class="container">
+        <div class="brand">
+            <!-- Logotype and searchbox -->
+            <a href="index.html"><img src="images/Logotype.svg" alt="Kenkata webshop"></a>
+            </div>
+        <div class="search">
+            <form id="searchboxForm">
+                <input id="query" type="text" placeholder="Search Products...">
+                <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                <div class="invalid-feedback">Felmeddelande</div>
+            </form>
+        </div>
+        <!-- Menu links -->
+        <div class="menu-links">
+            <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i> My account</a>
+            <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+            <a class="menu-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
+            <a id="cart" class="menu-link cart" href="#">
+                <span class="badge rounded-pill">99+</span>
+                <i class="fa-regular fa-cart-shopping me-2"></i>
+            <span>€99999.00</span>
+            </a>
+         </div>
+    </div>
+    <nav>
+        <!-- Dropdown menu -->
+        <div class="container">
+            <div class="browse-categories">
+                <div class="dropdown">
+                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span>
+                            <i class="fa-regular fa-bars me-3"></i>Browse Categories
+                            </span>
+                            <i class="fa-solid fa-chevron-down ms-4"></i>         
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">WOMAN</a></li>
+                        <li><a class="dropdown-item" href="#">MAN</a></li>
                     </ul>
                </div>
             </div>
-            <div class="menu-links">
-                <span class="site-links">
-                    <a href="#">Newsletter</a>
-                    <a href="#">Contact us</a>
-                    <a href="#">FAQs</a>
-                </span>
-                <span class="social-media">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                </span>   
-            </div>
-        </div>
+            <div class="special-offer">
+                <button class="btn btn-theme">SPECIAL OFFER</button>
+         </div>
     </div>
-
-<!-- Main menu -->
-    <div class="main-menu">
-        <div class="container">
-            <div class="brand">
-                <a href="index.html"><img src="images/Logotype.svg" alt="Kenkata webshop"></a>
-                </div>
-            <div class="search">
-                <form id="searchboxForm">
-                    <input id="query" type="text" placeholder="Search Products...">
-                    <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
-                </form>
-            </div>
-            <div class="menu-links">
-                <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i> My account</a>
-                <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
-                <a class="menu-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
-                <a id="cart" class="menu-link cart" href="#">
-                    <span class="badge rounded-pill">99+</span>
-                    <i class="fa-regular fa-cart-shopping me-2"></i>
-                <span>€99999.00</span>
-                </a>
-             </div>
-        </div>
-        <nav>
-            <div class="container">
-                <div class="browse-categories">
-                    <div class="dropdown">
-                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>
-                                <i class="fa-regular fa-bars me-3"></i>Browse Categories
-                                </span>
-                                <i class="fa-solid fa-chevron-down ms-4"></i>         
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">WOMAN</a></li>
-                            <li><a class="dropdown-item" href="#">MAN</a></li>
-                        </ul>
-                   </div>
-                </div>
-                <div class="special-offer">
-                    <button class="btn btn-theme">SPECIAL OFFER</button>
-             </div>
-        </div>
-        </nav>
-    </div>
+    </nav>
+</div>
 </header>
 
 <!-- Showcase -->
@@ -112,7 +119,7 @@
     <img src="images/showcase-image.svg" alt="two people standing">
     </div>
 </section>
-
+<!-- Webshop info -->
 <secton class="webshop-info">
     <div class="container">
         <div class="info-box">
@@ -154,7 +161,7 @@
             <img src="images/wave-line.svg" alt="waveline">
             <p>We always try to give you the best product within a fast and reliable way</p>
         </div>
-
+        <!-- Categorybox grid -->
         <div class="grid">
             <a href="#" id="category-box-1" class="category-box">
             <div class="category-box-title">
@@ -215,6 +222,7 @@
             <img src="images/wave-line.svg" alt="waveline">
             <p>Check out our latest products from top fashion designers</p>
         </div>
+        <!-- New Arrivals Card -->
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
                 <div class="card h-100">
@@ -241,7 +249,7 @@
                             </div>
                         </div>
                      </div>
-                     <div class="card-background"></div>
+                    <div class="card-background"></div>
                   </div>
               </div>       
         <div class="col">
@@ -325,7 +333,7 @@
                             </div>
                         </div>
                      </div>
-                     <div class="card-background"></div>
+                    <div class="card-background"></div>
                   </div>
               </div>     
         </div>
@@ -354,8 +362,8 @@
             <img src="images/wave-line.svg" alt="waveline">
             <p>Check out our monthly featured products from top brands</p>
         </div>
+        <!-- Featured Products Card -->
         <div class="row row-cols-1 row-cols-md-4 g-4">
-
             <div class="col">
                 <div class="card h-100">
                 <ul class="card-menu">
@@ -495,8 +503,7 @@
             <h1>12</h1>
             <p>Seconds</p>
             </div>
-          
-         <a href="#" id="button" class="btn btn-lg btn-white">SHOP NOW</a> 
+           <a href="#" id="button" class="btn btn-lg btn-white">SHOP NOW</a> 
         </div>
    </div>
 </section>
@@ -599,7 +606,7 @@
                     </div>
                 </div>
              </div>
-             <div class="card-background"></div>
+        <div class="card-background"></div>
      </div>
 </div>
 </section>
@@ -614,6 +621,7 @@
       <form id="subscribeform">
         <input id="query" type="text" placeholder="Enter email address">
         <button class="btn btn-white" type="submit">Subscribe</button>
+        <div class="invalid-feedback">Felmeddelande</div>
     </form>
      </div>
      <div class="right">

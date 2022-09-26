@@ -16,6 +16,7 @@
     <div class="top-menu">
         <div class="container">
             <div class="site-settings">
+                <!-- Dropdown selected language -->
                 <div class="dropdown dropdown-theme me-3">
                         <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
@@ -25,6 +26,7 @@
                             <li><a class="dropdown-item" href="#">SWE</a></li>
                         </ul>
                   </div>
+                  <!-- Dropdown selected currency -->
                   <div class="dropdown dropdown-theme me-3">
                     <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <span id="selected-currency">EUR</span><i class="fa-solid fa-chevron-down ms-3"></i>
@@ -42,6 +44,7 @@
                     <a href="#">Contact us</a>
                     <a href="#">FAQs</a>
                 </span>
+                <!-- Social media links -->
                 <span class="social-media">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -57,14 +60,17 @@
     <div class="main-menu">
         <div class="container">
             <div class="brand">
+                <!-- Logotype and searchbox -->
                 <a href="index.html"><img src="images/Logotype.svg" alt="Kenkata webshop"></a>
                 </div>
             <div class="search">
                 <form id="searchboxForm">
                     <input id="query" type="text" placeholder="Search Products...">
                     <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                    <div class="invalid-feedback">Felmeddelande</div>
                 </form>
             </div>
+            <!-- Menu links -->
             <div class="menu-links">
                 <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i> My account</a>
                 <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
@@ -77,6 +83,7 @@
              </div>
         </div>
         <nav>
+            <!-- Drpdown menu -->
             <div class="container">
                 <div class="browse-categories">
                     <div class="dropdown">
@@ -120,10 +127,12 @@
                     <div class="my-4">
                         <label for="signin_email">Email<span class="required">*</span></label>
                         <input id="signin_email" type="email" autocomplete="email" required>
+                        <div class="invalid-feedback">Felmeddelande</div>
                     </div>
                     <div class="mb-4">
                         <label for="signin_password">Password <span class="required">*</span></label>
                         <input id="signin_password" type="Password" autocomplete="current-password" required>
+                        <div class="invalid-feedback">Felmeddelande</div>
                     </div>
                     <div class="mb-4 d-grid">
                         <button typ="submit" class="btn bt-lg btn-theme">LOG IN</button>

@@ -42,7 +42,7 @@ html, body {
     font-weight: var(--font-weight-regular);
     color: var(--color-theme-dark);   
 }
-
+/* btn - buttons */
 .btn-theme {
     background-color: var(--color-theme);
     color: var(--color-white);
@@ -120,6 +120,7 @@ a {
     color: var(--color-theme);
     font-weight: var(--font-weight-regular);
     text-decoration: none;
+    transition: 0.2s ease-in-out;
     }
     a:hover {
         color:var(--color-theme-dark);
@@ -206,9 +207,8 @@ a {
                 background-color:var(--color-theme);
                 color:var(--color-white);
                 border:none;
-                padding:0;
-                
-              
+                padding:0; 
+                transition: 0.3s ease-in-out;
             }     
             .top-menu .site-settings .dropdown-theme button:hover {
                 color:var(--color-theme-dark);                    
@@ -217,6 +217,7 @@ a {
                 background-color:var(--color-theme);
                 color:var(--color-white);
                 border:none;
+                border-radius: 0;
                 width:250px;  
                 margin-top: 3rem;
                 }   
@@ -226,10 +227,14 @@ a {
                     border:none;
                     width:100%;  
                     margin: 0; 
+                    transition: 0.2s ease-in-out;
+                    
                 }   
                 .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover {
                     background-color:var(--color-theme-dark);
                     color:var(--color-white);
+                    transition: 0.2s ease-in-out;
+                   
                     
                 }   
     .top-menu .menu-links {
@@ -243,6 +248,7 @@ a {
         color:var(--color-white);
         text-decoration: none;
         margin: 1.2rem;
+        transition: 0.3s ease-in-out; 
     }
     .top-menu .menu-links a:hover {
         color: var(--color-theme-dark);
@@ -251,8 +257,8 @@ a {
     .top-menu .menu-links .social-media  {
         margin-left: 1rem;
         font-size: var(--font-size-14);
+        transition: 0.3s ease-in-out; 
     }
-
     .top-menu .menu-links .social-media a {
         margin: 0 0.3rem;
     }
@@ -323,6 +329,7 @@ a {
             text-decoration: none;
             color: var(--color-theme-dark);
             margin:  0 0.8rem;
+            transition: 0.2s ease-in-out; 
         }
             .main-menu .menu-links .menu-link:hover {
                 color: var(--color-theme);
@@ -384,9 +391,10 @@ a {
              }
              .main-menu nav .browse-categories .dropdown-menu {
                 background-color: var(--color-theme);
+                border-radius: 0;
+                margin:0;
+                transition: 0.2s ease-in-out;
              }
-      
-            
                 .main-menu nav .browse-categories button span {
                     display: flex;
                     align-items: center;
@@ -513,7 +521,7 @@ background-color: var(--color-gray-3);
                 font-size: 0.8rem;
                 margin-top: 0.5rem;
              }
-
+/* Shop by categori card -grid */
 #category-box-1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -759,9 +767,9 @@ background-color: var(--color-gray-3);
         font-size: var(--font-size-14);
     }
 
-/* ---------  featured products ---------  */
+/* ---------  featured products and card---------  */
 
-.featured-products  {
+.featured-products {
     padding-top: 6rem;
 }
     .featured-products .card {
@@ -1253,6 +1261,4 @@ background-color: var(--color-gray-3);
         width:100%;
     }
 } 
-
-
-        
+       
