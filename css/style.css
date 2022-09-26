@@ -377,11 +377,14 @@ a {
             }
             .main-menu nav .browse-categories button:hover {
                 background-color: var(--color-theme-dark); 
-                color:var(--color-white);
+                color:var(--color-white); 
+                transition: 0.3s ease-in-out;
              }
              .main-menu nav .browse-categories .dropdown-menu {
                 background-color: var(--color-theme);
              }
+      
+            
                 .main-menu nav .browse-categories button span {
                     display: flex;
                     align-items: center;
@@ -731,8 +734,8 @@ background-color: var(--color-gray-3);
     .showcase-middle .showcase-middle-left p {
         color: var(--color-white);
         font-family: var(--font-roboto);
-        font-size: 0.875rem);
-        font-weight: var(--font-weight-regular);
+        font-size: 0.875rem;
+        font-weight:var(--font-weight-regular);
         
     }
 .showcase-middle .showcase-middle-right {
