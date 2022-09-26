@@ -12,20 +12,18 @@
 </head>
 <body>
   <header>
-
-    <!-- Top menu -->
-
+ <!-- Top menu -->
     <div class="top-menu">
         <div class="container">
             <div class="site-settings">
                 <div class="dropdown dropdown-theme me-3">
-                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
-                            </button>
-                            <ul id="languages"class="dropdown-menu dropdown-theme">
-                                <li><a class="dropdown-item" href="#">ENG</a></li>
-                                <li><a class="dropdown-item" href="#">SWE</a></li>
-                            </ul>
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                        </button>
+                        <ul id="languages"class="dropdown-menu dropdown-theme">
+                            <li><a class="dropdown-item" href="#">ENG</a></li>
+                            <li><a class="dropdown-item" href="#">SWE</a></li>
+                        </ul>
                   </div>
                   <div class="dropdown dropdown-theme me-3">
                     <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,13 +54,17 @@
     </div>
 
 <!-- Main menu -->
-
     <div class="main-menu">
         <div class="container">
             <div class="brand">
                 <a href="index.html"><img src="images/Logotype.svg" alt="Kenkata webshop"></a>
                 </div>
-            <div class="search"></div>
+            <div class="search">
+                <form id="searchboxForm">
+                    <input id="query" type="text" placeholder="Search Products...">
+                    <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                </form>
+            </div>
             <div class="menu-links">
                 <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i> My account</a>
                 <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
@@ -98,6 +100,7 @@
     </div>
 </header>
 
+<!-- Site-title -->
 <section class="site-title">
     <div class="container">
         <h1>My Account</h1>
@@ -107,7 +110,7 @@
             </ul>
     </div>
 </section>
-
+<!-- Sign in form -->
 <section class="signup-signin form-theme">
     <div class="container">
         <div class="card">
@@ -125,14 +128,31 @@
                     <div class="mb-4 d-grid">
                         <button typ="submit" class="btn bt-lg btn-theme">LOG IN</button>
                     </div>
-                        <div>
-                        <input id="signin_rememberMe" type="checkbox">
-                        <label for="signin_rememberMe">Remember me</label>
-                        <a href="#">Lost your password?</a>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex">
+                                <input id="signin_rememberme" type="checkbox" class="me-2">
+                                <label for="signin_rememberMe">Remember me</label>
+                            </div>
+                       <a href="#">Lost your password?</a>
+                       </div>
+                       <div class="mb-4 external-logins">
+                        <div class="mb-2">
+                            <div class="label">OR LOGIN WITH</div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="exernal-social-media-buttons">
+                        <div class="facebook-button">
+                            <button></button>
+                        </div>
+                        <div class="google-button">
+                            <button></button>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
+        <!-- Sign up form -->
         <div class="card">
             <div class="card-body">
                 <h1 class="card-title">REGISTER</h1>
@@ -142,18 +162,22 @@
                     <div class="mb-4">
                         <label for="signup_firstName">Firstname <span class="required">*</span></label>
                         <input id="signup_firstName" type="text" autocomplete="given-name" required>
+                        <div class="invalid-feedback">Felmeddelande</div>
                     </div>
                     <div class="mb-4">
                         <label for="signup_lastName">Lastname <span class="required">*</span></label>
                         <input id="signup_lastName" type="text" autocomplete="family-name" required>
+                        <div class="invalid-feedback">Felmeddelande</div>
                     </div>
                     <div class="mb-4">
                         <label for="signup_email">Email<span class="required">*</span></label>
                         <input id="signup_email" type="email" autocomplete="email" required>
+                        <div class="invalid-feedback">Felmeddelande</div>
                     </div>
                     <div class="mb-4">
                         <label for="signup_password">Password <span class="required">*</span></label>
                         <input id="signup_password" type="Password" autocomplete="current-password" required>
+                        <div class="invalid-feedback">Felmeddelande</div>
                     </div>
                     <p class="card-text">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy.</a></p>
                     <div class="mb-4 d-grid">
@@ -165,6 +189,11 @@
     </div>
 </section>
 
-
+<!-- Footer -->
+<secton class="footer">
+    <div class="wrapper">
+        <h1>© Copyright 2022 Kenkata</h1>
+    </div>
+</secton>
 </body>
 </html> 

@@ -14,18 +14,17 @@
   <header>
 
     <!-- Top menu -->
-
     <div class="top-menu">
         <div class="container">
             <div class="site-settings">
                 <div class="dropdown dropdown-theme me-3">
-                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
-                            </button>
-                            <ul id="languages"class="dropdown-menu dropdown-theme">
-                                <li><a class="dropdown-item" href="#">ENG</a></li>
-                                <li><a class="dropdown-item" href="#">SWE</a></li>
-                            </ul>
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                        </button>
+                        <ul id="languages"class="dropdown-menu dropdown-theme">
+                            <li><a class="dropdown-item" href="#">ENG</a></li>
+                            <li><a class="dropdown-item" href="#">SWE</a></li>
+                        </ul>
                   </div>
                   <div class="dropdown dropdown-theme me-3">
                     <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,13 +55,17 @@
     </div>
 
 <!-- Main menu -->
-
     <div class="main-menu">
         <div class="container">
             <div class="brand">
                 <a href="index.html"><img src="images/Logotype.svg" alt="Kenkata webshop"></a>
                 </div>
-            <div class="search"></div>
+            <div class="search">
+                <form id="searchboxForm">
+                    <input id="query" type="text" placeholder="Search Products...">
+                    <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                </form>
+            </div>
             <div class="menu-links">
                 <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i> My account</a>
                 <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
@@ -99,7 +102,6 @@
 </header>
 
 <!-- Showcase -->
-
 <section class="showcase">
     <div class="container">
     <div class="showcase-body">
@@ -145,7 +147,6 @@
 </secton>
 
 <!-- Shop by category -->
-
 <section class="shop-by-category">
     <div class="container">
         <div class="section-title">
@@ -207,7 +208,6 @@
 </section>
 
 <!-- New Arrivals -->
-
 <section class="new-arrivals">
     <div class="container">
         <div class="section-title">
@@ -216,34 +216,34 @@
             <p>Check out our latest products from top fashion designers</p>
         </div>
         <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div class="col">
-            <div class="card h-100">
-            <ul class="card-menu">
-                <li><i class="fa-solid fa-circle instock"></i></li>
-                <li><a href="#"<i class="fa-regular fa-heart"></i></a></li>
-                <li><a href="#"<i class="fa-regular fa-shuffle"></i></a></li>
-                <li><a href="#"<i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="#"<i class="fa-regular fa-cart-shopping"></i></a></li>
-            </ul>
-            <img src="images/placeholders/placeholders-man-body.jpg" alt="placeholder-image">
-                <div class="card-body">
-                  <h1>Blue silk flare sleeved top</h1>
-                  <button disabled>Fashion</button>
-                  <p class="card-old-price">€50.00</p>
-                  <div class="d-flex justify-content-between align-items center">
-                        <p class="card-discount-price">€20.00</p>
-                        <div class="text-theme">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+            <div class="col">
+                <div class="card h-100">
+                <ul class="card-menu">
+                    <li><i class="fa-solid fa-circle outofstock"></i></li>
+                    <li><a href="#"<i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="#"<i class="fa-regular fa-shuffle"></i></a></li>
+                    <li><a href="#"<i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"<i class="fa-regular fa-cart-shopping"></i></a></li>
+                </ul>
+                <img src="images/placeholders/placeholders-man-body.png" alt="placeholder-image">
+                    <div class="card-body">
+                      <h1>New look men's coat</h1>
+                      <button disabled>Fashion</button>
+                      <p class="card-old-price">€64.00</p>
+                      <div class="d-flex justify-content-between align-items center">
+                            <p class="card-discount-price">€56.00</p>
+                            <div class="text-theme">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                         </div>
-                    </div>
-                 </div>
-                 <div class="card-background"></div>
-              </div>
-            </div>    
+                     </div>
+                     <div class="card-background"></div>
+                  </div>
+              </div>       
         <div class="col">
             <div class="card h-100">
             <ul class="card-menu">
@@ -309,30 +309,29 @@
                     <li><a href="#"<i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="#"<i class="fa-regular fa-cart-shopping"></i></a></li>
                 </ul>
-                <img src="images/placeholders/placeholders-man-body.jpg" alt="placeholder-image">
+                <img src="images/placeholders/placeholder-man-cheast.png" alt="placeholder-image">
                     <div class="card-body">
-                      <h1>Extra discount</h1>
+                      <h1>New look men's coat</h1>
                       <button disabled>Fashion</button>
-                      <p class="card-old-price">€35.00</p>
+                      <p class="card-old-price">€64.00</p>
                       <div class="d-flex justify-content-between align-items center">
-                            <p class="card-discount-price">€10.00</p>
+                            <p class="card-discount-price">€56.00</p>
                             <div class="text-theme">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
                             </div>
                         </div>
                      </div>
-                    <div class="card-background"></div>
-                </div>
-            </div>
+                     <div class="card-background"></div>
+                  </div>
+              </div>     
         </div>
 </section>
 
 <!-- Showcase middle -->
-
 <section class="showcase-middle">
     <div class="container">
     <div class="showcase-middle-left">
@@ -348,7 +347,6 @@
 </section>
 
 <!-- Featured Products -->
-
 <section class="featured-products">
     <div class="container">
         <div class="section-title">
@@ -474,7 +472,6 @@
 </section>
 
 <!-- Flash sale -->
-
 <section class="flash-sale">
     <div class="container">
     <div class="left">
@@ -505,7 +502,6 @@
 </section>
 
 <!-- Top sellers -->
-
 <section class="top-sellers">
     <div class="container">
         <div class="section-title">
@@ -516,7 +512,6 @@
 </section>
 
 <!-- Top-sell card-->
-
 <section class="top-sell">
     <div class="container">
     <div class="left">
@@ -605,19 +600,21 @@
                 </div>
              </div>
              <div class="card-background"></div>
-        </div>
+     </div>
 </div>
 </section>
 
 <!-- Subscribe -->
-
 <section class="subscribe">
     <div class="container">
     <div class="left">
         <h1>SUBSCRIBE <span>NOW</span></h1>
         <p>Signup for awesome news about our new products and <br>
       know our special discounts on products.</p>
-      <a href="#" class="btn btn-lg btn-theme-white">SHOP NOW</a> 
+      <form id="subscribeform">
+        <input id="query" type="text" placeholder="Enter email address">
+        <button class="btn btn-white" type="submit">Subscribe</button>
+    </form>
      </div>
      <div class="right">
     </div>
@@ -625,12 +622,10 @@
 </section>
 
 <!-- Footer -->
-
 <secton class="footer">
     <div class="wrapper">
         <h1>© Copyright 2022 Kenkata</h1>
     </div>
 </secton>
-
 </body>
 </html> 
