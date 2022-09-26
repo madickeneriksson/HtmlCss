@@ -49,7 +49,8 @@ html, body {
     border-radius: var(--border-radius-medium);
     font-weight: var(--font-weight-medium);
     padding-left: 1.75rem;
-    padding-right: 1.75rem; 
+    padding-right: 1.75rem;
+    transition: 0.3s ease-in-out; 
 }
     .btn-theme:hover {
         background-color: var(--color-theme-dark);
@@ -62,12 +63,12 @@ html, body {
     font-weight: var(--font-weight-medium);
     padding-left: 1.75rem;
     padding-right: 1.75rem; 
+    transition: 0.3s ease-in-out; 
     }
-  
     .btn-white:hover {
         background-color: var(--color-theme-dark);
         color: var(--color-white);    
-        }
+    }
  .btn-theme-dark {
     background-color: var(--color-theme-dark);
     color: var(--color-white);
@@ -75,11 +76,12 @@ html, body {
     font-weight: var(--font-weight-medium);
     padding-left: 1.75rem;
     padding-right: 1.75rem; 
+    transition: 0.3s ease-in-out; 
     }
     .btn-theme-dark:hover {
         background-color: var(--color-white);
         color: var(--color-dark);    
-        }
+    }
 
 .bg-theme {
     background-color: var(--color-theme);
@@ -704,7 +706,12 @@ background-color: var(--color-gray-3);
             }
 #button {
     position:absolute;
-    margin: 15rem;
+    margin: 15rem;  
+}
+/* Annat tema då vita temat ej passade */
+#button:hover {
+    background-color:var(--color-theme);
+    border:var(--color-theme-dark);
 }
 
 /* ---------  Showcase middle ---------  */
